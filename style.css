@@ -36,8 +36,16 @@ nav{
 nav img{
     color: red;
     width: 114px;
+    
     position: relative;
     z-index: 10;
+
+}
+
+@media (min-width: 200px) and (max-width: 700px){
+    nav img{
+        width: 70px;
+    }
 
 }
 nav button{
@@ -46,8 +54,17 @@ nav button{
     height: 30px;
     width: 100px ;
     margin-right: 20px;
+    
+    
 
     
+
+}
+@media (min-width: 200px) and (max-width: 700px){
+    nav button{
+        display: flex;
+        margin-right: 0px;
+    }
 
 }
 .hero{
@@ -71,15 +88,42 @@ nav button{
     text-align: center;
     max-width: 70vw;
 }
+@media (min-width: 200px) and (max-width: 700px){
+    .hero> :first-child{
+        font-weight: 900;
+    font-size: 23px;
+    text-align: center;
+    max-width: 70vw;
+    }
+
+}
 .hero> :nth-child(2){
     font-weight: 400;
     font-size: 24px;
     text-align: center;
 }
+@media (min-width: 200px) and (max-width: 700px){
+    .hero> :nth-child(2){
+        font-weight: 400;
+    font-size: 13px;
+    text-align: center;
+    max-width: 70vw;
+    }
+
+}
 .hero> :nth-child(3){
     font-weight: 400;
     font-size: 24px;
     text-align: center;
+}
+@media (min-width: 200px) and (max-width: 700px){
+    .hero> :nth-child(3){
+        font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+    max-width: 70vw;
+    }
+
 }
 .heros> :first-child{
     font-family: 'Martel sans' ,  "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
@@ -164,6 +208,13 @@ nav button{
     justify-content: center;
     gap: 12px;
 }
+@media (min-width: 200px) and (max-width: 700px){
+    .hero-buttons{
+        display: grid;
+    }
+
+}
+
 
 .first{
     display: flex;
@@ -179,17 +230,28 @@ nav button{
 }
 
 .secImg img{
-    width: 30vw;
+    width: 40vw;
     position: relative;
     z-index: 10;
 }
 
 .secImg video{
     position: absolute;
-    width: 26vw;
-    top: 51px;
-    right: 0;
+    width: 30vw;
+    margin-top: 70px;
+    margin-left: 60px
+
+    
 }
+@media (min-width:200px) and (max-width:700px){
+    .secImg video{
+        width: 25vw;
+        margin-top: 30px;
+        margin-left: 45px
+    }
+}
+
+
 section.first> div{
     display: flex;
     flex-direction: column;
@@ -200,26 +262,56 @@ section.first> div{
     font-weight: bolder;
 
 }
+@media (min-width: 200px) and (max-width: 700px){
+    .first> div :first-child{
+        font-size: 17px;
+    }
+}
 .first> div :nth-child(2){
     font-size: 24px;
     font-weight: bolder;
 
 }
+@media (min-width: 200px) and (max-width: 700px){
+    .first> div :nth-child(2){
+        font-size: 8px;
+    }
+}
 .third video{
-    width: 20vw;
-    margin-right: 60px;
+    position: absolute;
+    width: 25vw;
+    margin-right: 0px;
     
 }
 .faqbox{
     transition: all 0.3s;
     display: flex;
-    background-color: rgb(65, 61, 61);
+    background-color: rgb(58, 55, 55);
     padding: 24px;
     max-width: 75vw;
     margin: 10px auto;
     justify-content: space-between;
     cursor: pointer;
     
+}
+.faqs{
+    transition: all 0.3s;
+    display: flex;
+    background-color: rgb(63, 62, 62);
+    padding: 24px;
+    max-width: 75vw;
+    margin: 10px auto;
+    justify-content: space-between;
+    cursor: pointer;
+    
+}
+@media (min-width: 200px)and (max-width: 700px){
+    .faqs{
+        display: grid;
+        padding: 14px;
+    max-width: 90vw;
+        
+    }
 }
 .faq :hover{
     background-color: rgb(37, 36, 36);
